@@ -1,0 +1,60 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Hafif şeffaf arka plan */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Sayfa ortasında konumlandırma */
+  z-index: 1000; /* Üst katman */
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Gölge efekti */
+  width: 100%;
+  max-width: 500px; /* Maksimum genişlik */
+  position: relative; /* İçerik sabit */
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px); /* Hover efekti */
+}
+
+.button-container {
+  position: fixed;
+  top: 20px;
+  right: 100px;
+  display: flex;
+  gap: 10px; /* Butonlar arasındaki boşluk */
+  z-index: 1000; /* Modal üstünde olmasını sağlar */
+}
+
+.register-btn, .login-btn {
+  background-color: #3490dc;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.register-btn:hover, .login-btn:hover {
+  background-color: #2779bd;
+}
+
+.cancel-btn {
+  color: #e3342f;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  color: #cc1f1a;
+}
