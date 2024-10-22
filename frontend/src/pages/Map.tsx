@@ -31,7 +31,7 @@ const Map: React.FC = () => {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAOwd55obaAZn0vgrjzexVEeZgz9lAwwIE" // Replace with your actual API key
+    googleMapsApiKey: "YourAPIKey" // Replace with your actual API key
   });
 
   useEffect(() => {
